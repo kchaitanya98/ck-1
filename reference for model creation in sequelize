@@ -1,0 +1,34 @@
+//importing mysql module
+const Sequelize = require('sequelize');
+
+const prospectModel= require('../model/prospectCreation');
+
+//importing connection 
+const db=require('../database/database_connection.js');
+
+const ILLApproval=db.define("eb_sales_ill_approval",{
+    se_id:{ type: Sequelize.STRING, allowNull: true },
+    prospect_id: {
+        type: Sequelize.INTEGER,
+        references: {
+           model: 'eb_sales_prospect', //  refers to table name
+           key: 'id', // 'id' refers to column name in Main table
+        }
+     },
+    bandwidth :{ type: Sequelize.STRING, allowNull: true },
+    otc :{ type: Sequelize.STRING, allowNull: true },
+    order_value :{ type: Sequelize.FLOAT, allowNull: true },
+    pay_term :{ type: Sequelize.FLOAT, allowNull: true },
+    contract_in_years:{ type: Sequelize.INTEGER, allowNull: true },
+    contract_document:{ type: Sequelize.STRING, allowNull: true },
+    status_am :{ type: Sequelize.STRING, allowNull: true },
+    status_cm :{ type: Sequelize.STRING, allowNull: true },
+    city :{ type: Sequelize.STRING, allowNull: true },
+    insertion_time:{
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('NOW'),
+    },
+},
+{ freezeTableName: true });
+prospectModel.hasOne(ILLApproval, {foreignKey: 'prospect_id' });
