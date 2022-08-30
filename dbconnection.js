@@ -22,10 +22,10 @@ const connection = new Sequelize(
 
 connection.authenticate()
 .then(() => {
-  //console.log('Connection has been established successfully.', 'DB - ',process.env.DB_Name);
+  console.log('Connection has been established successfully.', 'DB - ',process.env.DB_Name);
 })
 .catch(err => {
- // console.error('Unable to connect to the database:', err);
+  console.error('Unable to connect to the database:', err);
 });
 
 
@@ -48,7 +48,7 @@ connection.authenticate()
 // const singleportModel=require('./model/singleportmodel');
 // const single_port = singleportModel(connection, Sequelize);
 
-//connection.sync();
+connection.sync();
 
 module.exports = connection;
 
