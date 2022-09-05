@@ -20,13 +20,13 @@ const connection = new Sequelize(
     
 );
 
-connection.authenticate()
-.then(() => {
-  console.log('Connection has been established successfully.', 'DB - ',process.env.DB_Name);
-})
-.catch(err => {
-  console.error('Unable to connect to the database:', err);
-});
+// connection.authenticate()
+// .then(() => {
+//   console.log('Connection has been established successfully.', 'DB - ',process.env.DB_Name);
+// })
+// .catch(err => {
+//   console.error('Unable to connect to the database:', err);
+// });
 
 
 // Exporting the sequelize object.
