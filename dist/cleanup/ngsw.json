@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1661347610873,
+  "timestamp": 1662355122593,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.850dcc4601eea467.js",
+        "/main.0a13c765f4adeaa0.js",
         "/manifest.webmanifest",
         "/polyfills.c56f4188fc347844.js",
         "/runtime.7bfc4581b6400f0b.js",
@@ -79,8 +79,8 @@
     "/assets/scanner-act1.jpg": "bc14a99b8f60d67578c15ca205d55408d0ab3c38",
     "/cleanuplogo.6a356f3c8f5e03ff.png": "c1f8813ae179fa2363e14cd3cf1366d4e1afd272",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "ea2bf8852d4cffc7c47d85ecd0151a26003b1415",
-    "/main.850dcc4601eea467.js": "f44ec64a412d22da2ddd0aeaea916dc230d1c9ca",
+    "/index.html": "421f798d96f05fbd37728e5ffdb4e262078f5ab9",
+    "/main.0a13c765f4adeaa0.js": "a2e11b36be243f46782b003e637d87974f4d38c7",
     "/manifest.webmanifest": "fffa2e0075931288e62bab65a789668888c7df52",
     "/polyfills.c56f4188fc347844.js": "e92006d164c56d83f4a310ad0db9a0db0573e8d1",
     "/runtime.7bfc4581b6400f0b.js": "fadee2bb641d91bb612b05a7a4fa9d2b95ffdb1e",
