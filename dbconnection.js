@@ -48,7 +48,7 @@ connection.authenticate()
 // const singleportModel=require('./model/singleportmodel');
 // const single_port = singleportModel(connection, Sequelize);
 
-connection.sync();
+//connection.sync();
 
 module.exports = connection;
 
