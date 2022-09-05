@@ -9,4 +9,4 @@ const client=MongoClient.connect(uri,(err,db)=>{
 });
 //listDatabases(client);
 
-module.exports=client;
+//module.exports=client;
